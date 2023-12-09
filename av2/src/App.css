@@ -1,5 +1,63 @@
-body{
+
+body {
   margin:0;
   border: 0;
+  color: black;
+  background: linear-gradient(90deg, rgb(13, 0, 255) 0%, rgb(170, 0, 255) 100%);
+}
+.titulo1{
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+
+}
+.titulo1,.formulario{
+  
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+
+}
+.formulario{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+  
+}
+.botao{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+  margin-bottom: 10px;
+  
 }
 
+
+  
+
+button:hover{
+color:gray;  
+  
+} 
+.fundocadastro{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15% 40%;
+  min-height:180px;
+  border-radius: 10px;
+  
+  min-width:200px ;
+  max-width: 500px ;
+}
+.lista{
+
+background-color: whitesmoke;
+width: 600px;
+border-radius:0px 15px 15px 0px;
+
+}

@@ -40,12 +40,24 @@ const CadastroForm = ({ onCadastro }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Formulário de Cadastro</h2>
+    
+    <form onSubmit={handleSubmit}> 
+    <div className='fundocadastro'>
+      <div className='vazio'></div>
+      
+     <div className='titulo1'> 
+      <h2  >Formulário de Cadastro</h2>
+      </div>
+      <div className='formulario'>
       <FormField label="Nome" type="text" value={nome} onChange={(e) => setNome(e.target.value)} required />
-      <FormField label="Descrição" type="text" value={descricao} onChange={(e) => setDescricao(e.target.value)} required />
+      <FormField label="senha" type="password" value={descricao} onChange={(e) => setDescricao(e.target.value)} required />
+      </div>
+      <div className='botao'>
       <button type="submit">Cadastrar</button>
+      </div>
+      </div>
     </form>
+   
   );
 };
 
@@ -60,8 +72,8 @@ const ListaItens = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Lista de Itens</h2>
+    <div className='lista'>
+      <h2 className='titulo2'>Lista de Itens</h2>
       <ul>
         {itens.map((item, index) => (
           <li key={index}>
